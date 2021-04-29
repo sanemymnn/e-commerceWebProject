@@ -37,3 +37,33 @@ $(document).ready(function() {
       } 
   });  
 });
+
+
+$('.slider-for').slick({  /* big images */
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false, 
+  fade: true,
+  asNavFor: '.slider-nav'  /* will be changed by clicking small images */
+});
+$('.slider-nav').slick({   /* small images */
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',  
+  dots: false,
+  vertical: true,
+  verticalSwiping: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        vertical: false,
+        verticalSwiping: false,
+        dots: true,
+        arrows: true
+      }
+    }
+  ]
+});

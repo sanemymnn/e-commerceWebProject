@@ -1,0 +1,92 @@
+.header .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 90px;
+}
+
+.error-page {
+  background-image: url("../assets/exclamation-mark.svg");
+  background-position: left -55px center;
+  background-repeat: no-repeat;
+}
+.container-sm {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.bigTitle h2 {
+  font-size: 113px;
+  font-weight: 900;
+  line-height: 115px;
+  color: #84bc22;
+}
+.head h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #000000;
+}
+.article-block p {
+  color: #555555;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.greyBgBox {
+  background-color: #f1edea;
+  padding: 50px 0px 40px;
+}
+
+.bread-area li {
+  display: inline-block;
+}
+.bread-area li a {
+  color: #84bc22;
+}
+.bread-area .breadcrumb-item.active {
+  color: #45413e;
+}
+.bread-area .breadcrumb-item + .breadcrumb-item::before {
+  color: #c7d3da;
+}
+.titleBlock h4 {
+  color: #45413e;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 900;
+}
+.whiteBgBox {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.borderCol {
+  border-top: 2px solid #e8e2d6;
+}
+.spacerBox {
+  padding: 60px;
+}
+.lineTitleStyle {
+  text-align: center;
+  overflow: hidden;
+}
+.lineTitleStyle > h4 {
+  display: inline-block;
+  position: relative;
+  padding: 0 40px;
+  margin: 0;
+}
+.lineTitleStyle > h4::before,
+.lineTitleStyle > h4::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  border-top: 1px solid;
+  opacity: 0.1;
+}
+.lineTitleStyle > h4::before {
+  right: 100%;
+}
+.lineTitleStyle > h4::after {
+  left: 100%;
+}
